@@ -29,7 +29,6 @@ namespace MISA.AMIS.Core.Services
             if (employeeRepository.CheckEmployeeCodeExist(employee.EmployeeCode) == true)
             {
                 IsValid = false;
-                //ErrorValidateMsgs.Add("Mã Nhân Viên đã tồn tại trong hệ thống.");
                 ErrorValidateMsgs.Add("Mã Nhân Viên đã tồn tại trong hệ thống.");
             }
 

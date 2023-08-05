@@ -23,49 +23,49 @@ namespace MISA.AMIS.Api.Controllers
 
 
 
-        //[HttpGet("Filter")]
-        //public IActionResult GetPaging(int pageIndex, int pageSize, string? filter)
-        //{
-        //    try
-        //    {
-        //        var res = employeeRepository.GetPaging(pageIndex, pageSize, filter);
-        //        return Ok(res);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return HandleException(ex);
-        //    }
-        //}
+        [HttpGet("Filter")]
+        public IActionResult GetPaging(int pageIndex, int pageSize, string? filter)
+        {
+            try
+            {
+                var res = employeeRepository.GetPaging(pageIndex, pageSize, filter);
+                return Ok(res);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+        }
 
 
 
-        //[HttpGet("NewEmployeeCode")]
-        //public IActionResult GetNewEmployeeCode()
-        //{
-        //    try
-        //    {
-        //        var data = employeeRepository.GetNewEmployeeCode();
-        //        return Ok(data);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return HandleException(ex);
-        //    }
-        //}
+        [HttpGet("NewEmployeeCode")]
+        public IActionResult GetNewEmployeeCode()
+        {
+            try
+            {
+                var data = employeeRepository.GetNewEmployeeCode();
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+        }
 
-        //[HttpDelete("DeleteMultiple")]
-        //public IActionResult DeleteMultiple(string EmployeeId)
-        //{
-        //    try
-        //    {
-        //        var data = employeeRepository.DeleteMultiple(EmployeeId);
-        //        return Ok(data);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return HandleException(ex);
-        //    }
-        //}
+        [HttpDelete("DeleteMultiple")]
+        public IActionResult DeleteMultiple(string EmployeeId)
+        {
+            try
+            {
+                var data = employeeRepository.DeleteMultiple(EmployeeId);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+        }
 
     }
 }

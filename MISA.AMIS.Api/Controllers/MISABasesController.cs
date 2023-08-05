@@ -131,7 +131,7 @@ namespace MISA.AMIS.Api.Controllers
         /// </summary>
         /// <param name="ex"></param>
         /// <returns></returns>
-        private IActionResult HandleException(Exception ex)
+        protected IActionResult HandleException(Exception ex)
         {
             //Ghi log vào hệ thống
             if (ex is MISAValidateException)
@@ -150,11 +150,10 @@ namespace MISA.AMIS.Api.Controllers
                 var res = new
                 {
                     devMsg = ex.Message,
+                    data = ex.InnerException,
                     userMsg = "Có lỗi xảy ra, vui lòng liên hệ MISA để được trợ giúp."
                 };
-
                 return StatusCode(500, res);
-
             }
         }
 
