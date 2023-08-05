@@ -139,8 +139,23 @@ namespace MISA.AMIS.Core.Models
         /// </summary>
         public string? ModifiedBy { get; set; }
 
+        public string? GenderName
+        {
+            get
+            {
+                switch (Gender)
+                {
+                    case Core.Enums.Gender.Female:
+                        return Core.Resources.ResourceObject.Gender_Female;
+                    case Core.Enums.Gender.Male:
+                        return Core.Resources.ResourceObject.Gender_Male;
+                    case Core.Enums.Gender.Other:
+                        return Core.Resources.ResourceObject.Gender_Other;
+                    default:
+                        return null;
+                }
+            }
 
-
-
+        }
     }
 }

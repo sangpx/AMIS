@@ -117,12 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DatabaseConfig" xml:space="preserve">
-    <value>"Host=localhost; Port=3360;Database=misa.web10.sangpx;User Id=sang;Password=123456789";</value>
-    <comment>Kết nối chung</comment>
+  <data name="ErrorException_Eng" xml:space="preserve">
+    <value>An error occurred, please contact MISA for help!</value>
   </data>
   <data name="ErrorException_VN" xml:space="preserve">
-    <value>Có lỗi xảy ra vui lòng liên hệ MISA để được trợ giúp!</value>
-    <comment>Hiển thị lỗi</comment>
+    <value>Có lỗi xảy ra, vui lòng liên hệ MISA để được trợ giúp.</value>
+  </data>
+  <data name="Gender_Female" xml:space="preserve">
+    <value>Nữ</value>
+  </data>
+  <data name="Gender_Male" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="Gender_Other" xml:space="preserve">
+    <value>Khác</value>
   </data>
 </root>
